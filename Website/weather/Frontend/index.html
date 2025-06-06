@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Weather</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns@2"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Weather - Odense</h1>
+    <div class="dashboard">
+      <div>
+        <strong>Temperature:</strong> <span id="temperature">-- °C</span>
+      </div>
+      <div>
+        <strong>Weather:</strong> <span id="weather">--</span>
+      </div>
+      <div>
+        <strong>Wind Speed:</strong> <span id="wind">-- m/s</span>
+      </div>
+      <div>
+        <small id="lastUpdated">Last updated: --</small>
+      </div>
+    </div>
+
+    <canvas id="tempChart" width="600" height="300"></canvas>
+  </div>
+  <script src="script.js" defer></script>
+</body>
+</html>
+
