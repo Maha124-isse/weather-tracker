@@ -91,8 +91,10 @@ async function fetchAndDisplayWeather() {
   }
 }
 
+const updateButton = document.getElementById('updateButton');
+
 window.addEventListener('DOMContentLoaded', () => {
-  loadSnapshots()
-  setInterval(fetchAndDisplayWeather, 20000);
+  loadSnapshots();
+  updateButton.addEventListener('click', fetchAndDisplayWeather);
 });
 

@@ -32,8 +32,8 @@ app.get('/api/snapshots', async (req, res) => {
 });
 
 // Route for the HTML page
-app.get('/newpage', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'newpage.html'));
+app.get('/index', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
 const PORT = process.env.PORT || 3000;
