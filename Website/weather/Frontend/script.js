@@ -95,3 +95,4 @@ window.addEventListener('DOMContentLoaded', () => {
   loadSnapshots()
   setInterval(fetchAndDisplayWeather, 20000);
 });
+
